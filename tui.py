@@ -51,19 +51,19 @@ def main():
         inp = scr.getch()
         if inp == ord('q'):
             clenupExit(0)
-        elif inp == ord('h'):
+        elif inp in [ord('h'), ord('a')]:
             minL -= STEP
-        elif inp == ord('l'):
+        elif inp in [ord('l'), ord('d')]:
             minL += STEP
-        elif inp == ord('j'):
+        elif inp in [ord('j'), ord('s')]:
             maxT -= STEP
-        elif inp == ord('k'):
+        elif inp in [ord('k'), ord('w')]:
             maxT += STEP
-        elif inp == ord('+'):
+        elif inp in [ord('+'), ord('K')]:
             STEP /= 1.1
-        elif inp == ord('-'):
+        elif inp in [ord('-'), ord('J')]:
             STEP *= 1.1
-        elif inp == ord('0'):
+        elif inp in [ord('0'), ord('r'), ord('R')]:
             STEP = 0.1
 
         try:
