@@ -12,4 +12,5 @@ IM_START = -1
 IM_END = 1
 
 BW = False
+IMG_PROGRAM = "feh"
 STORE = False

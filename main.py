@@ -6,7 +6,7 @@ from PARAMS import (MAX_ITER,
                     IMG_WIDTH, IMG_HEIGHT,
                     REAL_START, REAL_END,
                     IM_START, IM_END,
-                    BW, STORE)  # Params
+                    BW, STORE, IMG_PROGRAM)  # Params
 from multiprocessing import Pool
 
 # Creates new image and drawing
@@ -64,7 +64,7 @@ def main():
     if STORE:
         img.save("set.png", "PNG")
     else:
-        img.show()
+        img.show(command=IMG_PROGRAM)
 
 
 if __name__ == "__main__":
